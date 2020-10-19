@@ -66,11 +66,9 @@ export default function CustomizedDialogs({ user, onClose }) {
         <DialogContent dividers>
           <FormControl>
             <div>
-              <InputLabel htmlFor="my-input">Nombre</InputLabel>
               <Input value={user.name} />
             </div>
             <div>
-              <InputLabel htmlFor="my-input">País</InputLabel>
               <Input value={user.country} />
             </div>
           </FormControl>
