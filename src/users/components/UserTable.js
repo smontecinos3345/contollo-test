@@ -46,7 +46,7 @@ export default function DenseTable({ rows, showModal = () => ({}) }) {
                 {row.name}
               </TableCell>
               <TableCell align="right">{row.country}</TableCell>
-              <TableCell align="right"><a onClick={() => showModal(row)}>Actions</a></TableCell>
+              <TableCell align="right"><a onClick={() => showModal(row)}>View</a></TableCell>
               <TableCell align="right">{row.carbs}</TableCell>
               <TableCell align="right">{row.protein}</TableCell>
             </TableRow>
