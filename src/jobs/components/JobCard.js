@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard({ company, image, position, ...rest }) {
+export default function SimpleCard({ company, image, jobPosition, ...rest }) {
 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
@@ -34,10 +34,11 @@ export default function SimpleCard({ company, image, position, ...rest }) {
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           {company}
         </Typography>
-        <img src={image} />
+        {/* la imagen da 404*/}
+        <img src={"https://picsum.photos/200/300"} />
       </CardContent>
       <CardActions>
-        <Button size="small">{position}</Button>
+        <Button size="small">{jobPosition}</Button>
       </CardActions>
     </Card>
   );

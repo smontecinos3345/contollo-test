@@ -30,8 +30,8 @@ function JobPage({ count = 10, loading, error, data }) {
     container
     direction="row"
     justify="center"
-    spacing={20}
-    alignItems="center"
+    spacing={10}
+    alignItems="left"
   >  {data.map(job => <JobCard key={job.id} {...job} />)}
   </Grid>
 
