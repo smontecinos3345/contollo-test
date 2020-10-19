@@ -103,7 +103,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Responsive drawer
+            Contollo test
           </Typography>
         </Toolbar>
       </AppBar>
