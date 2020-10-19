@@ -1,9 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import JobPage from "./pages/JobPage";
+
 export default ({ match: { url } }) => {
   return (
     <Switch>
-      <Route exact path={`${url}/`} render={() => <h1>I'm the job module</h1>}></Route>
+      <Route exact path={`${url}/`} component={JobPage}></Route>
     </Switch>
   );
 };
